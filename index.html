@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduNest - Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      border-radius: 28px;
+      box-shadow: 0 8px 32px rgba(102,126,234,0.13), 0 2px 8px rgba(76, 61, 128, 0.07);
+      padding: 0 0 40px 0;
+      max-width: 420px;
+      width: 95%;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 32px;
+      overflow: hidden;
+      animation: fadeIn 0.7s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .header {
+      background: linear-gradient(90deg, #667eea 60%, #764ba2 100%);
+      padding: 36px 0 24px 0;
+      border-radius: 0 0 60% 60% / 0 0 18% 18%;
+      color: #fff;
+      margin-bottom: 0;
+      box-shadow: 0 4px 16px rgba(102,126,234,0.10);
+    }
+    .header-icon {
+      font-size: 2.6em;
+      margin-bottom: 8px;
+      display: inline-block;
+      background: rgba(255,255,255,0.13);
+      border-radius: 50%;
+      padding: 10px 18px;
+      box-shadow: 0 2px 8px rgba(102,126,234,0.08);
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 1.08em;
+      color: #e0e7ff;
+      opacity: 0.93;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+    .desc {
+      color: #666;
+      font-size: 1.08em;
+      margin: 36px 0 32px 0;
+      padding: 0 18px;
+    }
+    .button {
+      display: block;
+      width: 85%;
+      background: linear-gradient(90deg, #667eea 60%, #764ba2 100%);
+      color: #fff;
+      font-weight: 600;
+      padding: 15px 0;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.13em;
+      box-shadow: 0 2px 8px rgba(102,126,234,0.08);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.13s;
+      margin: 0 auto 22px auto;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.01em;
+    }
+    .button:last-child { margin-bottom: 0; }
+    .button:hover {
+      background: linear-gradient(90deg, #5a67d8 60%, #6b47b6 100%);
+      box-shadow: 0 6px 18px rgba(102,126,234,0.13);
+      transform: translateY(-2px) scale(1.03);
+    }
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.98em;
+      margin-bottom: 12px;
+      opacity: 0.85;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 0 0 24px 0; }
+      .header { padding: 24px 0 16px 0; }
+      .logo { font-size: 1.3em; }
+      .desc { font-size: 0.98em; }
+      .button { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-icon">🎓</div>
+      <div class="logo">EduNest</div>
+      <div class="subtitle">Your Academic Resource Portal</div>
+    </div>
+    <div class="desc">
+      Welcome! Please choose an action below.<br>
+      <span style="font-size:0.97em; color:#888;">(For email confirmation or password reset)</span>
+    </div>
+    <a href="/email_confirmed.html" class="button">Email Confirmation</a>
+    <a href="/super_admin/user_change_password.html" class="button">Password Reset</a>
+  </div>
+  <div class="footer">
+    &copy; 2024 EduNest. All rights reserved.
+  </div>
+</body>
+</html>
